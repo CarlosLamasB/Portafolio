@@ -1,0 +1,199 @@
+:root{
+    --width:8vw;
+    --height:8vw; 
+    --length:calc(-1* var(--height) / 2);
+  --aqua1:linear-gradient(45deg, rgba(198,203,210,1) 21%, rgba(94,134,175,1) 92%);
+  --topPump:40%;
+  --leftPump:5%; 
+}
+  
+  .visual{ display: flex;
+  position: absolute;
+   height:100vh;
+    width:100vw;
+    flex-direction:column;
+    justify-content: space-around;
+    }
+    .voluta{
+      position:absolute;
+      top:calc(var(--topPump) - 10px );
+      left:calc( var(--leftPump) - 10px);
+      width:calc(var(--width) + 20px);
+      height:calc(var(--height) + 20px);
+      background:linear-gradient(45deg, rgba(43,106,194,1) 22%, rgba(15,20,111,1) 90%);
+      border-radius: 50%;
+      z-index:2;
+    }
+  
+  #carcaza{
+    position:absolute;
+    top:var(--topPump);
+    left:var(--leftPump);
+    width:var(--width);
+    height:var(--height);
+    background-color:black;
+    border-radius: 50%;
+    display:flex;
+     flex-direction:column;
+    justify-content: center;
+     align-items: center;
+    z-index:2;
+  }
+  
+  .baseprop{
+    position:absolute;
+    
+     width:calc(1.5*var(--width)/2);
+    height:calc(1.5*var(--height)/2);
+    border-radius: 50%;
+    background-color:gray;
+    background:linear-gradient(45deg, rgba(198,203,210,1) 21%, rgba(75,84,93,1) 92%);
+    display:flex;
+     
+   
+    animation: rotation 0.5s infinite linear;
+    
+  }
+  
+  @keyframes rotation {
+      
+   from{transform: rotate(0deg);}
+    to{transform: rotate(359deg);
+       }/* */
+  }
+  
+  .propeller{
+    position:absolute;
+     left:47.5%;
+   background: linear-gradient(45deg, rgba(198,203,210,1) 21%, rgba(116,132,149,1) 92%);
+     width:5%;
+    height:25%;
+    padding:0;
+    top:-5%;
+    
+  }
+  
+  .p2{
+    transform: rotate(45deg) ;
+    transform-origin: 50% 220%
+  
+  }
+  
+  .p3{
+    transform: rotate(90deg) ;
+    transform-origin: 50% 220%
+  }
+  
+  .p4{
+    transform: rotate(135deg); 
+    transform-origin: 50% 220%
+  }
+  
+  .p5{
+    transform: rotate(180deg) ;
+    transform-origin: 50% 220%
+  }
+  
+  .p6{
+    transform: rotate(-135deg); 
+    transform-origin: 50% 220%
+  }
+  
+  .p7{
+    transform: rotate(270deg) ;
+    transform-origin: 50% 220%
+  }
+  
+  .p8{
+    transform: rotate(-45deg) ;
+    transform-origin: 50% 220%
+  }
+  
+  .flow1{ 
+    position:absolute;
+   background:var(--aqua1);
+  top:70%;
+  width:calc(var(--width)/4);
+    height:calc(var(--height)/8);  
+    border-radius:50% 0 0 0;
+    display:flex;
+  }
+  
+  .flow1>div{
+    position:absolute;
+     left:50%;
+    width:50%;
+      height:50%;
+    background:white;
+    border-radius:50% 0 50% 50%;
+  }
+  
+  .f12{
+  left:calc(var(--width)/4);
+  }
+  
+  .descarga{position:absolute;
+    top:calc(var(--topPump) - 10px);
+  left:calc(var(--leftPump) + var(--width)/2 );
+  width:calc(var(--width)/2);
+    height:calc(var(--height)/4);
+      background:linear-gradient(45deg, rgba(43,106,194,1) 22%, rgba(15,20,111,1) 90%);}
+  
+  .succion{
+    position:absolute;
+    z-index:2;
+    width:calc(1.5*var(--width)/2);
+    height:calc(var(--height)/8);
+    top:37.5%;
+    left:-50%;
+    border-radius: 0 calc(var(--height)/4) calc(var(--height)/4) 0;
+    border-width:10px;
+    border-style:double;
+    border-color:gray gray gray gray;
+    /*background-image:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhT9AXpUqUyMjILJ9qn9PDvXpdXE-iqbc-HMXHfU04s6rJ0fbT);*/
+    background:var(--aqua1);
+    animation: /*animate 20s infinite linear*/ x 10s linear infinite,
+      y 2s infinite cubic-bezier(.5,200,.5,-200);
+  }
+    
+  
+  
+  @keyframes animate{
+    0%{
+      background-position:left 0px top 80px;
+    }
+       40%{
+      background-position:left 800px top -50px;
+    }
+    
+      80%{
+      background-position:left 400px top -50px;
+    }
+    
+    
+    
+  }
+  @keyframes y {
+      0%{
+      background-position:left 0px
+    }
+       40%{
+      background-position: left calc(1.5*var(--width)/2);
+    }
+    
+      80%{
+      background-position: left calc(1.5*var(--width));
+    }
+  }
+  @keyframes x {
+     0%{
+      background-position: top 0px;
+    }
+       40%{
+      background-position: top -500px;
+    }
+    
+      80%{
+      background-position: top -50px;
+    }
+  }

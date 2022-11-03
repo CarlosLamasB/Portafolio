@@ -1,0 +1,84 @@
+.glasscontainer{
+    position:absolute;
+    top: 240%;
+    width: 70%;
+    left: 15%;
+    height: 60%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border-radius: 10px;
+    backdrop-filter: blur(4px);
+    background-color: rgba(76,88,93, 0.075);
+    box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px;
+    border: 2px rgba(255,255,255,0.4) solid;
+    border-bottom: 2px rgba(40,40,40,0.35) solid;
+    border-right: 2px rgba(40,40,40,0.35) solid;
+
+}
+.button{
+    position:absolute;
+    top: 310%;
+    
+
+}
+.vessel{
+    position:absolute;
+    top: 320%;
+    left:5%;
+    height:calc(1.25*var(--vessel));
+    border-radius:var(--vessel);
+      width:calc(3*var(--vessel));
+        background:gray;
+    display:flex;
+     flex-direction:column;
+    justify-content: center;
+     align-items: center;
+  }
+  .soporte{
+    position: absolute;
+    top:60%;
+   
+    background:cyan;
+    height:70%;
+      width:5%;
+      z-index: -1;
+    }
+  .sp1{left:25%;}
+  .sp2{right:25%}
+  .vessel > .bqlla{
+    position: absolute;
+    background: black;
+    height: 10%;
+    width:1%;
+  }
+  .vessel>.b1{ position: absolute;
+    background: black;
+  top:91%;
+    left:5%;
+    }
+  .vessel>.b2{ position: absolute;
+    background: black;
+  top:-1%;
+    left:94%;
+    }
+  .vessel>.cam{
+     position: absolute;
+    background: black;
+  top:0%;
+    height: 8%;
+    width:10%;
+  }
+  .vessel>.c1{left:6%; top:92%;}
+  .vessel>.c2{left:84%;}
+  .hueco{position:absolute;
+  height:80%;
+  width:60%;
+  background-color: brown;
+  border-style: solid;
+  border:10px;
+  border-color: black;
+  
+  
+  }

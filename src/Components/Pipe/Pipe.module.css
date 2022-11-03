@@ -1,0 +1,31 @@
+:root{
+    --width:8vw;
+    --height:8vw; 
+    --length:calc(-1* var(--height) / 2);
+  --aqua1:linear-gradient(45deg, rgba(198,203,210,1) 21%, rgba(94,134,175,1) 92%);
+    --topPump:40%;
+    --leftPump:5%;
+  }
+ .visual{ display: flex;
+    position: absolute;
+     height:100vh;
+      width:100vw;
+      flex-direction:column;
+      justify-content: space-around;
+      }
+
+  .succion{
+    position:absolute;
+    width:calc(20*var(--width)/2);
+    height:calc(var(--height)/8);
+    top:37.5%;
+    left:14%;
+    
+    border-width:1vh 0 1vh 0;
+   border-style:solid;
+   border-color:gray;
+   /*   background-image:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhT9AXpUqUyMjILJ9qn9PDvXpdXE-iqbc-HMXHfU04s6rJ0fbT);*/
+    background:var(--aqua1);
+    animation: /*animate 20s infinite linear*/ x 10s linear infinite,
+      y 2s infinite cubic-bezier(.5,200,.5,-200);
+  }

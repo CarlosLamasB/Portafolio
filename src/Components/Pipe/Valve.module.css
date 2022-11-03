@@ -1,0 +1,78 @@
+.valvula{
+    position:absolute;
+    top:250%;
+    left:55%;
+    height:calc(var(--height));
+    width:calc(1.5*var(--height)/2);
+     background: gray;
+    z-index:9;
+      display:flex;
+    flex-direction:column;
+    justify-content: center;
+     align-items: center;
+     cursor: pointer;
+  }
+  .valvula >.bqlla{
+    position: absolute;
+    background: black;
+  top:60%;
+    height: 60%;
+    width:30%;
+  }
+  .b1{
+    position:absolute;
+    left:-50%} 
+  .b2{position:absolute;
+  left: 120%;}
+  .cam{
+    position: absolute;
+    background: black;
+  top:60%;
+    height: 20%;
+    width:20%;
+  }
+  .c1{
+  left:-20%;
+  top:80%;}
+  .c2{left:100%;
+  top:80%;}
+  .brida{
+    position: absolute;
+    width:140%;
+    height:20%;
+    background:black;
+    top:-20%;
+  }
+  .sop{
+    position:absolute;
+    width:70%;
+    height:20%;
+    background:black;
+    top:-40%;
+    border-radius: 40% 40% 0 0
+  }
+  .eje{
+   
+     position:absolute;
+    width:25%;
+    height:60%;
+    background:black;
+    top:-100%;
+    border-radius: 25% 25% 0 0
+      /*este borde esta en funcion de width*/
+  }
+  .rueda{
+    position: absolute;
+    width:100%;
+    height:20%;
+    background:black;
+    top:-120%;
+    border-radius: 100%;
+    /*este borde esta en funcion de height*/
+  }
+  .tuerca{position: absolute;
+      background: black;
+  top:-130%;
+    height: 10%;
+    width:20%;
+  }
